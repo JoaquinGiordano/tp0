@@ -114,7 +114,7 @@ void paquete(int conexion)
 	do{
 		if(leido[0] == '\0') continue;
 		leido = readline("> ");
-		agregar_a_paquete(paquete,leido,(strlen(leido)) * sizeof(char));
+		agregar_a_paquete(paquete,leido,strlen(leido) + 1);
 	}while (leido[0] != '\0');
 
 
